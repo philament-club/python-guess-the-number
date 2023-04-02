@@ -1,5 +1,5 @@
 # Generated content
-annotated-sources/
+docs/annotated-sources/
 
 # Python bytecode
 *.py[co]
