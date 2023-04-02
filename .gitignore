@@ -1,0 +1,13 @@
+# Generated content
+annotated-sources/
+
+# Python bytecode
+*.py[co]
+
+# Backups
+*~
+*.bak
+
+# IDEs
+.idea
+.vscode
