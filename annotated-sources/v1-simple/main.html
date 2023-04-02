@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=utf-8">
+  <title>main.py</title>
+  <link rel="stylesheet" href="../pycco.css">
+</head>
+<body>
+<div id='container'>
+  <div id="background"></div>
+  <div class='section'>
+    <div class='docs'><h1>main.py</h1></div>
+  </div>
+  <div class='clearall'>
+  <div class='section' id='section-0'>
+    <div class='docs'>
+      <div class='octowrap'>
+        <a class='octothorpe' href='#section-0'>#</a>
+      </div>
+      <h2><span id="demande-au-joueur-de-deviner-un-nombre-tiré-au-hasard." href="demande-au-joueur-de-deviner-un-nombre-tiré-au-hasard."> Demande au joueur de deviner un nombre tiré au hasard. </span></h2>
+    </div>
+    <div class='code'>
+      <div class="highlight"><pre><span></span></pre></div>
+    </div>
+  </div>
+  <div class='clearall'></div>
+  <div class='section' id='section-1'>
+    <div class='docs'>
+      <div class='octowrap'>
+        <a class='octothorpe' href='#section-1'>#</a>
+      </div>
+      <p>Import d&rsquo;un générateur de nombres aléatoires</p>
+    </div>
+    <div class='code'>
+      <div class="highlight"><pre><span class="kn">from</span> <span class="nn">random</span> <span class="kn">import</span> <span class="n">randint</span></pre></div>
+    </div>
+  </div>
+  <div class='clearall'></div>
+  <div class='section' id='section-2'>
+    <div class='docs'>
+      <div class='octowrap'>
+        <a class='octothorpe' href='#section-2'>#</a>
+      </div>
+      <h3><span id="la-fonction-principale-de-notre-petit-jeu..." href="la-fonction-principale-de-notre-petit-jeu..."> La fonction principale de notre petit jeu&hellip; </span></h3>
+    </div>
+    <div class='code'>
+      <div class="highlight"><pre><span class="k">def</span> <span class="nf">jouer</span><span class="p">(</span><span class="n">max_essais</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">cheat</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span></pre></div>
+    </div>
+  </div>
+  <div class='clearall'></div>
+  <div class='section' id='section-3'>
+    <div class='docs'>
+      <div class='octowrap'>
+        <a class='octothorpe' href='#section-3'>#</a>
+      </div>
+      <p>🎲 Nombre tiré au sort (entre 1 et 100)</p>
+    </div>
+    <div class='code'>
+      <div class="highlight"><pre>    <span class="n">numero_gagnant</span> <span class="o">=</span> <span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span></pre></div>
+    </div>
+  </div>
+  <div class='clearall'></div>
+  <div class='section' id='section-4'>
+    <div class='docs'>
+      <div class='octowrap'>
+        <a class='octothorpe' href='#section-4'>#</a>
+      </div>
+      <p>🧮 Compteur du nombre d&rsquo;essais pour la partie</p>
+    </div>
+    <div class='code'>
+      <div class="highlight"><pre>    <span class="n">n_essais</span> <span class="o">=</span> <span class="mi">1</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Devinez un nombre entre 1 et 100... Vous avez </span><span class="si">{</span><span class="n">max_essais</span><span class="si">}</span><span class="s2"> essais.&quot;</span><span class="p">)</span></pre></div>
+    </div>
+  </div>
+  <div class='clearall'></div>
+  <div class='section' id='section-5'>
+    <div class='docs'>
+      <div class='octowrap'>
+        <a class='octothorpe' href='#section-5'>#</a>
+      </div>
+      <p>🥷 <em>(Petit argument pour faciliter les tests lors du développement&hellip;)</em></p>
+    </div>
+    <div class='code'>
+      <div class="highlight"><pre>    <span class="k">if</span> <span class="n">cheat</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;&gt;&gt;&gt; </span><span class="si">{</span><span class="n">numero_gagnant</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span></pre></div>
+    </div>
+  </div>
+  <div class='clearall'></div>
+  <div class='section' id='section-6'>
+    <div class='docs'>
+      <div class='octowrap'>
+        <a class='octothorpe' href='#section-6'>#</a>
+      </div>
+      <h4><span id="tant-que-la-réponse-n'a-pas-été-trouvée-et-qu'il-reste-des-essais..." href="tant-que-la-réponse-n'a-pas-été-trouvée-et-qu'il-reste-des-essais..."> Tant que la réponse n&rsquo;a pas été trouvée et qu&rsquo;il reste des essais&hellip; </span></h4>
+    </div>
+    <div class='code'>
+      <div class="highlight"><pre>    <span class="k">while</span> <span class="n">n_essais</span> <span class="o">&lt;=</span> <span class="n">max_essais</span><span class="p">:</span></pre></div>
+    </div>
+  </div>
+  <div class='clearall'></div>
+  <div class='section' id='section-7'>
+    <div class='docs'>
+      <div class='octowrap'>
+        <a class='octothorpe' href='#section-7'>#</a>
+      </div>
+      <ul>
+<li>⌨️ Demande au joueur de saisir une valeur&hellip;</li>
+</ul>
+    </div>
+    <div class='code'>
+      <div class="highlight"><pre>        <span class="n">reponse</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;[</span><span class="si">{</span><span class="n">n_essais</span><span class="si">}</span><span class="s2">/</span><span class="si">{</span><span class="n">max_essais</span><span class="si">}</span><span class="s2">] Quel nombre proposez-vous ? &quot;</span><span class="p">)</span></pre></div>
+    </div>
+  </div>
+  <div class='clearall'></div>
+  <div class='section' id='section-8'>
+    <div class='docs'>
+      <div class='octowrap'>
+        <a class='octothorpe' href='#section-8'>#</a>
+      </div>
+      <ul>
+<li>☑️ Tente de convertir la valeur saisie en nombre entier (<code>int</code>)</li>
+</ul>
+    </div>
+    <div class='code'>
+      <div class="highlight"><pre>        <span class="k">try</span><span class="p">:</span>
+            <span class="n">reponse</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">reponse</span><span class="p">)</span></pre></div>
+    </div>
+  </div>
+  <div class='clearall'></div>
+  <div class='section' id='section-9'>
+    <div class='docs'>
+      <div class='octowrap'>
+        <a class='octothorpe' href='#section-9'>#</a>
+      </div>
+      <blockquote>
+<p>❗ <em>oops!</em> La valeur saisie ne ressemble pas à un entier!</p>
+</blockquote>
+    </div>
+    <div class='code'>
+      <div class="highlight"><pre>        <span class="k">except</span> <span class="ne">ValueError</span><span class="p">:</span></pre></div>
+    </div>
+  </div>
+  <div class='clearall'></div>
+  <div class='section' id='section-10'>
+    <div class='docs'>
+      <div class='octowrap'>
+        <a class='octothorpe' href='#section-10'>#</a>
+      </div>
+      <blockquote>
+<ul>
+<li>affiche une erreur s&rsquo;il ne s&rsquo;agit pas d&rsquo;une ligne vide</li>
+</ul>
+</blockquote>
+    </div>
+    <div class='code'>
+      <div class="highlight"><pre>            <span class="k">if</span> <span class="n">reponse</span><span class="p">:</span>
+                <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;** &quot;</span><span class="si">{</span><span class="n">reponse</span><span class="si">}</span><span class="s1">&quot; n</span><span class="se">\&#39;</span><span class="s1">est pas un nombre!&#39;</span><span class="p">)</span></pre></div>
+    </div>
+  </div>
+  <div class='clearall'></div>
+  <div class='section' id='section-11'>
+    <div class='docs'>
+      <div class='octowrap'>
+        <a class='octothorpe' href='#section-11'>#</a>
+      </div>
+      <blockquote>
+<p>ℹ️ <code>continue</code> → &ldquo;sort&rdquo; de l&rsquo;itération actuelle de la boucle <code>while</code> (nouvelle saisie)</p>
+</blockquote>
+    </div>
+    <div class='code'>
+      <div class="highlight"><pre>            <span class="k">continue</span></pre></div>
+    </div>
+  </div>
+  <div class='clearall'></div>
+  <div class='section' id='section-12'>
+    <div class='docs'>
+      <div class='octowrap'>
+        <a class='octothorpe' href='#section-12'>#</a>
+      </div>
+      <ul>
+<li>🟰 Compare la valeur proposée à <code>numero_gagnant</code> et affiche un indice&hellip;</li>
+</ul>
+    </div>
+    <div class='code'>
+      <div class="highlight"><pre>        <span class="k">if</span> <span class="n">reponse</span> <span class="o">&lt;</span> <span class="n">numero_gagnant</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;+ Plus!&quot;</span><span class="p">)</span>
+        <span class="k">elif</span> <span class="n">reponse</span> <span class="o">&gt;</span> <span class="n">numero_gagnant</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;- Moins!&quot;</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">n_essais</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+                <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;PERFECT!&quot;</span><span class="p">)</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;BRAVO! Vous avez gagné en </span><span class="si">{</span><span class="n">n_essais</span><span class="si">}</span><span class="s2"> essais.&quot;</span><span class="p">)</span></pre></div>
+    </div>
+  </div>
+  <div class='clearall'></div>
+  <div class='section' id='section-13'>
+    <div class='docs'>
+      <div class='octowrap'>
+        <a class='octothorpe' href='#section-13'>#</a>
+      </div>
+      <blockquote>
+<p>ℹ️ La partie est terminée&hellip; <code>return</code> nous permet de &ldquo;quitter&rdquo; la fonction <code>jouer</code>.</p>
+</blockquote>
+    </div>
+    <div class='code'>
+      <div class="highlight"><pre>            <span class="k">return</span></pre></div>
+    </div>
+  </div>
+  <div class='clearall'></div>
+  <div class='section' id='section-14'>
+    <div class='docs'>
+      <div class='octowrap'>
+        <a class='octothorpe' href='#section-14'>#</a>
+      </div>
+      <ul>
+<li>➕ Incrémente le nombre d&rsquo;essais actuel.</li>
+</ul>
+    </div>
+    <div class='code'>
+      <div class="highlight"><pre>        <span class="n">n_essais</span> <span class="o">+=</span> <span class="mi">1</span></pre></div>
+    </div>
+  </div>
+  <div class='clearall'></div>
+  <div class='section' id='section-15'>
+    <div class='docs'>
+      <div class='octowrap'>
+        <a class='octothorpe' href='#section-15'>#</a>
+      </div>
+      <ul>
+<li>⬆️ Si <code>n_essais</code> ≤ <code>max_essais</code>: rinse &amp; repeat (<code>while</code> loop)&hellip;</li>
+</ul>
+    </div>
+    <div class='code'>
+      <div class="highlight"><pre></pre></div>
+    </div>
+  </div>
+  <div class='clearall'></div>
+  <div class='section' id='section-16'>
+    <div class='docs'>
+      <div class='octowrap'>
+        <a class='octothorpe' href='#section-16'>#</a>
+      </div>
+      <p>🛑 <code>n_essais</code> est égal à <code>max_essais</code>, la boucle <code>while</code> est terminée&hellip; <em>Game over!</em></p>
+    </div>
+    <div class='code'>
+      <div class="highlight"><pre>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Désolé, vous n&#39;avez pas trouvé le numéro gagnant: </span><span class="si">{</span><span class="n">numero_gagnant</span><span class="si">}</span><span class="s2">.&quot;</span><span class="p">)</span></pre></div>
+    </div>
+  </div>
+  <div class='clearall'></div>
+  <div class='section' id='section-17'>
+    <div class='docs'>
+      <div class='octowrap'>
+        <a class='octothorpe' href='#section-17'>#</a>
+      </div>
+      <h3><span id="le-point-d'entrée-de-notre-script-lorsqu'il-est-appelé-en-ligne-de-commande..." href="le-point-d'entrée-de-notre-script-lorsqu'il-est-appelé-en-ligne-de-commande..."> Le point d&rsquo;entrée de notre script lorsqu&rsquo;il est appelé en ligne de commande&hellip; </span></h3>
+    </div>
+    <div class='code'>
+      <div class="highlight"><pre><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span></pre></div>
+    </div>
+  </div>
+  <div class='clearall'></div>
+  <div class='section' id='section-18'>
+    <div class='docs'>
+      <div class='octowrap'>
+        <a class='octothorpe' href='#section-18'>#</a>
+      </div>
+      <p>&hellip;se résume à appeler notre fonction <code>jouer</code>.</p>
+    </div>
+    <div class='code'>
+      <div class="highlight"><pre>    <span class="n">jouer</span><span class="p">(</span><span class="n">cheat</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+</pre></div>
+    </div>
+  </div>
+  <div class='clearall'></div>
+</div>
+</body>
