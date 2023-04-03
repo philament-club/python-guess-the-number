@@ -15,7 +15,7 @@ Une introduction ludique à la programmation en Python par le biais d'un jeu sim
 - Créer une fonction.
 - Définir et manipuler des variables.
 - Types de données (et se méfier des inputs!).
-- Comparaisons (`if`/`elif`/`else`).
+- Branches (`if`/`elif`/`else`).
 - Boucles (`while`).
 
 ## 👀 Notice de consultation
