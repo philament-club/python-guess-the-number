@@ -22,6 +22,11 @@ de la programmation en Python, en partant d'un jeu simple: deviner un nombre.
 
 ## 👀 Notice de consultation
 
+Il existe plusieurs méthodes pour consulter le code de ce projet...
+
+- Consulter directement le code sur ce repository (via l'interface web de GitHub ou un checkout local),
+- [Consulter la version "literate" générée à partir du code source](https://philament-club.github.io/python-guess-the-number/annotated-sources/v1-simple/main.html).
+
 ## ⏩ Feuille de route / évolutions possibles
 
 ***« Faire de grandes choses à partir de petits riens »***
