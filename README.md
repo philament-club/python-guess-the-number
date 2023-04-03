@@ -40,8 +40,8 @@ On peut imaginer au fil du temps rajouter des fonctionnalités, comme par exempl
 
 L'idée est d'avoir une base et de montrer comment on peut la faire évoluer,
 quitte à lui faire changer son "média":
-- sous forme de "TUI" *via* `[Rich](https://github.com/Textualize/rich)`
-- sous forme de "GUI" *via* `tkinter`
+- sous forme de "TUI" *via* [Rich](https://github.com/Textualize/rich)          
+- sous forme de "GUI" *via* `tkinter` (lol)
 - sous forme de "jeu" *via* PyGame
 - sous forme de page web (auquel cas on passe à l'étape logique suivante:
   découvrir un nouveau monde! [server-side! HTML5! JavaScript!]).
