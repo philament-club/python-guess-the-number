@@ -20,6 +20,8 @@ Une introduction ludique à la programmation en Python par le biais d'un jeu sim
 
 ## 👀 Notice de consultation
 
+**SPOILER ALERT!** Ne consultez le code que si vous ne voulez pas résoudre le problème par vous-même, ou si vous êtes bloqué...
+
 Il existe plusieurs méthodes pour visualiser le code de ce projet...
 
 - [Consulter la version "annotée" générée à partir du code source](https://philament-club.github.io/python-guess-the-number/annotated-sources/v1-simple/main.html) (le mieux et le plus didactique!) ;
