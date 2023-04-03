@@ -1,14 +1,12 @@
 # 🎲 Guess the Number !
 
-Ce projet a pour ambition d'être une introduction ludique au monde
-de la programmation en Python, en partant d'un jeu simple: deviner un nombre.
+Ce projet a pour ambition d'être une introduction ludique à la programmation en Python, en partant d'un jeu simple: deviner un nombre.
 
 ## 📜 Règles du jeu
 
 - Un nombre est tiré au hasard entre 1 et 100.
 - Le joueur ou la joueuse doit deviner le nombre en question.
-  - Si la valeur donnée n'est pas bonne, on affiche un indice,
-    comme *plus* ou *moins*.
+  - Si la valeur donnée n'est pas bonne, on affiche un indice, comme *"plus"* ou *"moins"*.
   - 5 essais maximum!
 
 ## 🧠 Objectifs d'apprentissage
@@ -26,7 +24,7 @@ Il existe plusieurs méthodes pour visualiser le code de ce projet...
 
 - [Consulter la version "literate" générée à partir du code source](https://philament-club.github.io/python-guess-the-number/annotated-sources/v1-simple/main.html) (le mieux et le plus didactique!) ;
 - [*via* l'interface de GitHub](./v1-simple/main.py) (le plus facile) ;
-- *via* votre "pager" ou éditeur de texte préféré (si vous avez cloné ce repository).
+- En local, *via* éditeur de texte préféré (si vous avez cloné ce repository).
 
 ## ⏩ Feuille de route / évolutions possibles
 
@@ -42,6 +40,8 @@ On peut imaginer au fil du temps rajouter des fonctionnalités, comme par exempl
 
 L'idée est d'avoir une base et de montrer comment on peut la faire évoluer,
 quitte à lui faire changer son "média":
-- sous forme de mini jeu "graphique" via PyGame
+- sous forme de "TUI" *via* `[Rich](https://github.com/Textualize/rich)`
+- sous forme de "GUI" *via* `tkinter`
+- sous forme de "jeu" *via* PyGame
 - sous forme de page web (auquel cas on passe à l'étape logique suivante:
-  découvrir un nouveau monde! [HTML5 et JavaScript]).
+  découvrir un nouveau monde! [server-side! HTML5! JavaScript!]).
